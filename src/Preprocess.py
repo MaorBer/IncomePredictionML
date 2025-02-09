@@ -3,7 +3,6 @@ from ucimlrepo import fetch_ucirepo
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-
 def load_data():
     """Fetch the Census Income dataset from UCI Repository."""
     dataset = fetch_ucirepo(id=2)  # ID=2 corresponds to the Adult dataset
@@ -11,7 +10,6 @@ def load_data():
     # Convert dataset to DataFrame
     df = dataset.data.original
     return df
-
 
 def preprocess_data(df):
     """Preprocess dataset: clean missing values, encode categorical variables, and split features/target."""
@@ -30,7 +28,6 @@ def preprocess_data(df):
     y = df["income"]  # Target
 
     return X, y
-
 
 def get_train_test_data():
     """Returns train-test split of dataset."""

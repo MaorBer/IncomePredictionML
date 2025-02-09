@@ -5,6 +5,7 @@ from knn import train_knn
 
 
 if __name__ == "__main__":
+
     print("Training Models...")
     models = {
         "Adaboost": train_adaboost(),

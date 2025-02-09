@@ -21,11 +21,11 @@ def preprocess_data(df):
     label_encoders = {col: LabelEncoder() for col in categorical_cols}
 
     for col in categorical_cols:
-        df[col] = label_encoders[col].fit_transform(df[col])
+        df.loc[:, col] = label_encoders[col].fit_transform(df[col])
 
-    # Split into X (features) and y (target)
+    # Separate features and target variable
     X = df.drop(columns=["income"])  # Features
-    y = df["income"]  # Target
+    y = df["income"]  # Target (already encoded)
 
     return X, y
 
@@ -33,5 +33,11 @@ def get_train_test_data():
     """Returns train-test split of dataset."""
     df = load_data()
     X, y = preprocess_data(df)
+
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Debugging: Check unique values in y_train
+    print("Unique values in y_train:", set(y_train))
+    print("Data type of y_train:", y_train.dtype)
+
     return X_train, X_test, y_train, y_test

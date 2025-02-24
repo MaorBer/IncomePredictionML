@@ -25,7 +25,11 @@ def preprocess_data(df):
 
     # Separate features and target variable
     X = df.drop(columns=["income"])  # Features
-    y = df["income"]  # Target (already encoded)
+    y = df["income"]  # Target
+
+    # Ensure y is encoded as numeric
+    if y.dtype == 'object':
+        y = LabelEncoder().fit_transform(y)
 
     return X, y
 

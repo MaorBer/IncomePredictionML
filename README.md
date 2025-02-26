@@ -1,6 +1,7 @@
 # Census Income Prediction (Adult Dataset)
 
 This project aims to predict whether an individual's annual income exceeds $50K based on demographic and occupational data from the [UCI Adult (Census Income) dataset](https://archive.ics.uci.edu/dataset/2/adult).
+
 This project is the final project during the course "Machine Learning" at Ariel University.
 
 We compare multiple Machine Learning algorithms:
@@ -19,9 +20,8 @@ We compare multiple Machine Learning algorithms:
 4. [Usage](#usage)  
 5. [Implementation Details](#implementation-details)  
 6. [Results](#results)  
-7. [Key Insights](#key-insights)  
-8. [Future Work](#future-work)  
-9. [Authors](#authors)
+7. [Key Insights](#key-insights)
+8. [Authors](#authors)
 
 ---
 
@@ -166,16 +166,8 @@ Generally, **AdaBoost** performs the best, closely followed by **Decision Trees*
 
 ---
 
-## 8. Future Work
 
-- **Hyperparameter Tuning**: Use `GridSearchCV` or `RandomizedSearchCV` to optimize model parameters.
-- **Feature Engineering**: Create interaction features (e.g., age vs. education) or bin numeric features (e.g., age groups).
-- **Advanced Ensemble Methods**: Try **Random Forest**, **XGBoost**, or **LightGBM** for potentially higher accuracy.
-- **Regression**: Predict `hours-per-week` as a continuous variable with linear regression or other regressors.
-
----
-
-## 9. Authors
+## 8. Authors
 
 - **Maor Uriel Berenstein** – 212305965 
 - **Liel Yoash** – 2064777888 

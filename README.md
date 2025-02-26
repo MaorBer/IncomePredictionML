@@ -1,6 +1,7 @@
 # Census Income Prediction (Adult Dataset)
 
 This project aims to predict whether an individual's annual income exceeds $50K based on demographic and occupational data from the [UCI Adult (Census Income) dataset](https://archive.ics.uci.edu/dataset/2/adult).
+This project is the final project during the course "Machine Learning" at Ariel University.
 
 We compare multiple Machine Learning algorithms:
 - **AdaBoost**
@@ -20,8 +21,7 @@ We compare multiple Machine Learning algorithms:
 6. [Results](#results)  
 7. [Key Insights](#key-insights)  
 8. [Future Work](#future-work)  
-9. [Authors](#authors)  
-10. [License](#license)  
+9. [Authors](#authors)
 
 ---
 
@@ -55,7 +55,7 @@ We compare multiple Machine Learning algorithms:
 ├── results
 │   └── model_comparison.csv (created after evaluation)
 ├── README.md (this file)
-├── requirements.txt (optional: Python dependencies)
+├── requirements.txt (Python dependencies)
 └── .gitignore
 ```
 
@@ -70,7 +70,7 @@ We compare multiple Machine Learning algorithms:
 
 ### Clone this repository:
 ```bash
-git clone https://github.com/username/IncomePredictionML.git
+git clone https://github.com/MaorBer/IncomePredictionML
 cd IncomePredictionML
 ```
 
@@ -177,11 +177,8 @@ Generally, **AdaBoost** performs the best, closely followed by **Decision Trees*
 
 ## 9. Authors
 
-- **Maor Uriel Berenstein** – ****  
-- **Liel Yoash** – ****  
+- **Maor Uriel Berenstein** – 212305965 
+- **Liel Yoash** – 2064777888 
 
 ---
 
-## 10. License
-
-This project is licensed under the MIT License.

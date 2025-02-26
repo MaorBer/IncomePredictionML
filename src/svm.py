@@ -1,11 +1,7 @@
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
-from preprocess import get_train_test_data
 
-
-def train_svm():
-    X_train, X_test, y_train, y_test = get_train_test_data()
-
+def train_svm(X_train, X_test, y_train, y_test):
     model = SVC(kernel='rbf', random_state=42)
     model.fit(X_train, y_train)
 
@@ -17,4 +13,7 @@ def train_svm():
 
 
 if __name__ == "__main__":
-    train_svm()
+    # Optional: test this script in isolation
+    from src.preprocess import get_train_test_data
+    X_train, X_test, y_train, y_test = get_train_test_data()
+    train_svm(X_train, X_test, y_train, y_test)
